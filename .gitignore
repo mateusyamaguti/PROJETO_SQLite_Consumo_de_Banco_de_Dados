@@ -160,3 +160,17 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+# SQL initializer
+sqldiff.exe
+sqlite3_analyzer.exe
+sqlite3.exe
+sqldiff
+sqlite3_analyzer
+sqlite3
+
+# Database for class
+rexon_metals
+rexon_metals.db
+meu_banco_de_dados.db
+meu_banco_de_dados 
