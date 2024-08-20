@@ -1,25 +1,33 @@
-# TUTORIAL_SQLite_de_banco_de_dados
-
-<h1>Titulo ou Arte do Projeto</h1> 
-
-<p align="center">
-  <img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
-  <img src="https://img.shields.io/static/v1?label=Netlify&message=deploy&color=blue&style=for-the-badge&logo=netlify"/>
-</p>
+# TUTORIAL_SQLite_Consumo_de_Banco_de_Dados
 
 > Status do Projeto: Projeto em fase de desenvolvimento
 
+<h3>Objetivo:</h3> 
+<p>
+Este tutorial tem o objetivo didático de ensinar de forma prática o consumo de banco de dados por meio da linguagem de programação Python. Para tal será utlizado a biblioteca <b>SQLite</b> para efetuar a comunição e a comunicação com o banco de dados.
+</p>
+
+### Tecnologias
+
+![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+
+
 ### Tópicos 
 
-:small_blue_diamond: [Descrição do projeto](#descrição-do-projeto)
+Configurações iniciais
+- Importação do SQLite
+- Criação de Banco de Dados
+- Consultando BD no SQLite Online
 
-:small_blue_diamond: [Funcionalidades](#funcionalidades)
+Minha primeira Query
+- Conectar BD com método with
+- Consultar dados por meio de Query
+- Manipular dados
 
-:small_blue_diamond: [Deploy da Aplicação](#deploy-da-aplicação-dash)
-
-:small_blue_diamond: [Pré-requisitos](#pré-requisitos)
-
-:small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
+Manipulando banco de dados
+- Atualizar dados
+- Excluir dados
 
 ... 
 
