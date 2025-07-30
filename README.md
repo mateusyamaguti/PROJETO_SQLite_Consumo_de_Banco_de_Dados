@@ -29,107 +29,67 @@ Manipulando banco de dados
 - Atualizar dados
 - Excluir dados
 
-... 
+📝 ### Descrição do Projeto – Consumo de Banco de Dados SQLite com Python
+Este projeto em Python tem como objetivo demonstrar operações básicas de consumo e manipulação de dados em bancos de dados SQLite. Ele oferece uma interface simples via código para:
 
-Insira os tópicos do README em links para facilitar a navegação do leitor
+- Conectar a um banco de dados SQLite;
+- Consultar todas as tabelas disponíveis no banco;
+- Listar os dados de uma tabela específica;
+- Contar o número de registros em uma tabela;
+- Inserir novos registros em uma tabela existente;
+- Deletar uma tabela do banco de dados.
 
-## Descrição do projeto 
+É um ótimo exemplo educacional para quem está aprendendo sobre bancos de dados relacionais e como integrá-los a aplicações Python usando a biblioteca padrão sqlite3.
 
-<p align="justify">
-  Descrição breve do projeto compondo um paragrafo ou dois. 
-</p>
+🛠️ Funcionalidades
+Função	Descrição
+- conectar_com_db(db_name)	Estabelece conexão com o banco db_name.db.
+- consultar_tabelas_db(db_name)	Mostra todas as tabelas disponíveis no banco.
+- consultar_dados_em_tabelas(db, tabela)	Lista todos os dados de uma tabela específica.
+- consulta_tamanho_da_tabela(db, tabela)	Retorna o número de registros da tabela.
+- inserir_dados_em_tabela(...)	Insere um novo registro com id, nome e idade em uma tabela.
+- deletar_tarefa(db, tabela)	Remove a tabela indicada do banco.
 
-## Funcionalidades
+▶️ ### Como Rodar a Aplicação
+✅ Pré-requisitos:
 
-:heavy_check_mark: Funcionalidade 1  
+- Ter o Python 3.7+ instalado.
+- Ter a biblioteca padrão sqlite3 (já vem com o Python).
+- Ter ou criar um arquivo .db com as tabelas adequadas (ex: alunos.db).
 
-:heavy_check_mark: Funcionalidade 2  
+📦 1. Instale o Python (se ainda não tiver)
+https://www.python.org/downloads/
 
-:heavy_check_mark: Funcionalidade 3  
-
-:heavy_check_mark: Funcionalidade 4  
-
-## Layout ou Deploy da Aplicação :dash:
-
-> Link do deploy da aplicação. Exemplo com netlify: https://certificates-for-everyone-womakerscode.netlify.app/
-
-... 
-
-Se ainda não houver deploy, insira capturas de tela da aplicação ou gifs
-
-## Pré-requisitos
-
-:warning: [Node](https://nodejs.org/en/download/)
-
-...
-
-Liste todas as dependencias e libs que o usuário deve ter instalado na máquina antes de rodar a aplicação 
-
-## Como rodar a aplicação :arrow_forward:
-
-No terminal, clone o projeto: 
-
+📁 2. Estrutura esperada
+Você deve ter uma base SQLite com pelo menos uma tabela compatível com este esquema, por exemplo:
 ```
-git clone https://github.com/React-Bootcamp-WoMarkersCode/certificate-generator
+sql
+CREATE TABLE usuario (
+  id INTEGER PRIMARY KEY,
+  nome TEXT,
+  idade INTEGER
+);
+```
+Você pode criar isso com um gerenciador SQLite (como DB Browser for SQLite) ou via terminal Python.
+
+💻 3. Execute o código
+Salve o código em um arquivo, por exemplo: sqlite_app.py.
+
+Edite a parte final do código, descomentando as funções desejadas. Exemplo:
+```
+python
+
+consultar_tabelas_db("alunos")
+inserir_dados_em_tabela("alunos", "usuario", "Tiago", 30)
+consultar_dados_em_tabelas("alunos", "usuario")
 ```
 
-... 
-
-Coloque um passo a passo para rodar a sua aplicação. **Dica: clone o próprio projeto e verfique se o passo a passo funciona**
-
-## Como rodar os testes
-
-Coloque um passo a passo para executar os testes
-
+No terminal, execute o script:
 ```
-$ npm test, rspec, etc 
+bash
+
+python sqlite_app.py
 ```
-
-## Casos de Uso
-
-Explique com mais detalhes como a sua aplicação poderia ser utilizada. O uso de **gifs** aqui seria bem interessante. 
-
-Exemplo: Caso a sua aplicação tenha alguma funcionalidade de login apresente neste tópico os dados necessários para acessá-la.
-
-## JSON :floppy_disk:
-
-### Usuários: 
-
-|name|email|password|token|avatar|
-| -------- |-------- |-------- |-------- |-------- |
-|Lais Lima|laislima98@hotmail.com|lais123|true|https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS9-U_HbQAipum9lWln3APcBIwng7T46hdBA42EJv8Hf6Z4fDT3&usqp=CAU|
-
-... 
-
-Se quiser, coloque uma amostra do banco de dados 
-
-## Iniciando/Configurando banco de dados
-
-Se for necessário configurar algo antes de iniciar o banco de dados insira os comandos a serem executados 
-
-## Linguagens, dependencias e libs utilizadas :books:
-
-- [React](https://pt-br.reactjs.org/docs/create-a-new-react-app.html)
-- [React PDF](https://react-pdf.org/)
-
-...
-
-Liste as tecnologias utilizadas no projeto que **não** forem reconhecidas pelo Github 
-
-## Resolvendo Problemas :exclamation:
-
-Em [issues]() foram abertos alguns problemas gerados durante o desenvolvimento desse projeto e como foram resolvidos. 
-
-## Tarefas em aberto
-
-Se for o caso, liste tarefas/funcionalidades que ainda precisam ser implementadas na sua aplicação
-
-:memo: Tarefa 1 
-
-:memo: Tarefa 2 
-
-:memo: Tarefa 3 
-
 ## Desenvolvedores/Contribuintes :octocat:
 
 Liste o time responsável pelo desenvolvimento do projeto
